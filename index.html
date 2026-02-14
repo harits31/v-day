@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will you be my Valentine? 💕</title>
+    <title>A small question for someone special 💌</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hearts-bg"></div>
 
-    <div class="container">
-        <h1>Will you be my Valentine? 💕</h1>
+    <div class="overlay"></div>
+
+    <div class="container" id="intro-screen">
+        <h1>Hey... wait a second 👀</h1>
+        <p>I made something for you.</p>
+        <button onclick="startExperience()">Open it 💫</button>
+    </div>
+
+    <div class="container hidden" id="main-screen">
+        <h1>There’s something I’ve been meaning to ask you...</h1>
 
         <div class="gif-container">
-            <img id="cat-gif" src="https://media.tenor.com/EBV7OT7ACfwAAAAj/u-u-qua-qua-u-quaa.gif" alt="cute character">
+            <img src="https://media.tenor.com/jU9YbH9h9ZcAAAAj/cute-love.gif" alt="cute animation">
         </div>
 
         <div class="buttons">
-            <button id="yes-btn" onclick="handleYesClick()">Yes</button>
-            <button id="no-btn" onclick="handleNoClick()">No</button>
+            <button id="yes-btn" onclick="handleYesClick()">Tell me 💖</button>
+            <button id="no-btn" onclick="handleNoClick()">Not interested 🙈</button>
         </div>
-        <div id="tease-toast"></div>
+
+        <div id="response-message"></div>
     </div>
 
-    <audio id="bg-music" loop autoplay muted>
+    <audio id="bg-music" loop>
         <source src="music/beabadoobee - Glue Song (Lyrics).mp3" type="audio/mpeg">
     </audio>
 
-    <button id="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
+    <button id="music-toggle" onclick="toggleMusic()">🎵</button>
 
     <script src="script.js"></script>
 </body>
