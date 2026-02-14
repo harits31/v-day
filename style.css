@@ -204,3 +204,40 @@ h1 {
     width: 260px;
     height: 260px;
 }
+
+/* ===== VERSION 2 - DARK ROMANTIC THEME ===== */
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e) !important;
+    font-family: 'Poppins', sans-serif !important;
+    color: #ffffff;
+}
+
+/* matikan wiggle */
+h1 {
+    animation: none !important;
+    color: #ffffff !important;
+    text-shadow: none !important;
+}
+
+/* sembunyikan hearts background lama */
+.hearts-bg {
+    display: none !important;
+}
+
+/* tombol baru */
+#yes-btn {
+    background: linear-gradient(135deg, #ff4d6d, #ff758f) !important;
+    box-shadow: 0 6px 20px rgba(255, 77, 109, 0.45) !important;
+    border-radius: 30px !important;
+}
+
+#no-btn {
+    background: linear-gradient(135deg, #555, #222) !important;
+    border-radius: 30px !important;
+}
+
+/* hidden class untuk intro screen */
+.hidden {
+    display: none;
+}
